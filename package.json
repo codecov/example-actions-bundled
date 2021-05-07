@@ -1,0 +1,34 @@
+{
+  "name": "example-actions-bundled",
+  "description": "Example repository for GitHub Actions and bundling Codecov uploads",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/mocha": "5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2",
+    "nyc": "^15.0.1",
+    "typescript": "^3.1.1"
+  },
+  "scripts": {
+    "pretest": "tsc -p .",
+    "test": "nyc mocha",
+    "posttest": "nyc report --reporter=json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codecov/example-actions-bundled.git"
+  },
+  "keywords": [
+    "codecov",
+    "typescript",
+    "example",
+    "code",
+    "coverage"
+  ],
+  "author": "Thomas Hu <tom@codecov.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codecov/example-actions-bundled/issues"
+  },
+  "homepage": "https://github.com/codecov/example-actions-bundled#readme"
+}
